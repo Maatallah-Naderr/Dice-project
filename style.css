@@ -1,0 +1,162 @@
+body{
+    margin: 0px;
+    padding: 0px;
+  height: 600px;
+    
+    border: solid  2px red;
+  
+ background: linear-gradient( #EB333F,#EB333F);
+}
+
+.IMG img {
+  width: 40px;
+  height: 40px;
+}
+
+.container-game { 
+  background: linear-gradient(#ece9e94d,#EB333F);
+ 
+  width: 50%;
+  height:400px;
+  
+  margin: 5% auto;
+padding: 20px;
+   display: grid;
+ justify-content: center;
+  grid-template-columns: 0.9fr 1.1fr 1fr;
+  grid-template-rows: 0.4fr 0.2fr 0.5fr 0.7fr 0.6fr 2fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". BUTON ."
+    "PLAYEUR1 . PLAYEUR2"
+    "P1 IMG P2"
+    "CURRENT1 roll-dice current2"
+    ". hold ."
+    ". . ."
+    ". . .";
+}
+
+.BUTON { grid-area: BUTON; }
+
+.PLAYEUR1 { grid-area: PLAYEUR1; }
+
+.PLAYEUR2 { grid-area: PLAYEUR2; }
+
+.P1 { grid-area: P1; }
+
+.IMG { grid-area: IMG; }
+
+.P2 { grid-area: P2; }
+
+.CURRENT1 { grid-area: CURRENT1; }
+
+.roll-dice { grid-area: roll-dice; }
+
+.current2 { grid-area: current2; }
+
+.hold { grid-area: hold; }
+
+.BUTON button{
+  border-radius: 20px;
+  padding: 8px 30px;
+  border: transparent;
+  /* margin-bottom: 10px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+transform:translate(1s);
+}
+.BUTON button:hover{
+  cursor: pointer;
+  transform:scale(1,2s,1,2s);
+  padding: 10px 30px;
+
+}
+.PLAYEUR1{
+  font-size: 23px;
+  padding: 8px;
+  margin-left:50px ;
+
+}
+.PLAYEUR2{
+  font-size: 20px;
+  padding: 8px; 
+  margin-right: 30px;
+}
+.P1 {
+  color:#EB333F ;
+  font-size: 50px;
+  margin-left: 90px;
+}
+ .P2 {
+  color:#EB333F ;
+  font-size: 50px;
+margin-left:40px;
+
+
+} 
+.IMG{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.CURRENT1{
+  color: white;
+  border: transparent;
+  border-radius: 8px;
+background-color: #EB333F;
+text-align: center;
+margin-top: 50px;
+padding: 10px;
+text-transform: uppercase;
+}
+.current2{
+  color: white;
+  background-color: #ad8c8e42;
+  text-align:center ;
+  padding: 10px;
+  border: transparent;
+  border-radius: 8px;
+  margin-top:50px ;
+
+}
+.roll-dice button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: transparent;
+  padding: 8px 30px;
+   transform:translate(2ms) ;
+ 
+}
+.roll-dice button:hover{
+  cursor: pointer;
+  transform: scale(1,2 , 1,2);
+  padding:10px 30px ;
+}
+
+
+
+.hold button{
+  border: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5Opx;
+  padding: 8px 30px;
+  border-radius: 20px;
+  
+  text-transform: uppercase;
+ transform: translate(1ms);
+  
+}
+.hold button:hover{
+  cursor: pointer;
+  padding: 15px 30px;
+  transform: scaleY(1,2s, 1,2s);
+}
+
